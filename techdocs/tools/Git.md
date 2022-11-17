@@ -31,10 +31,6 @@ git core.attributesfile:
 
 ## Git Tasks
 
-### Remotes
-- Push branch to upstream
-> git push --set-upstream (-u) origin &lt;branch&gt;
-
 ### Tags
 - create annotated tag:
 > git tag -a &lt;tagName&gt; -m &lt;comment&gt;
@@ -91,10 +87,10 @@ git core.attributesfile:
 - stash selectively (cycle through available hunks)
 > git stash [push] --patch [-m]
 
-- create new branch from stash
+-  new branch from stash
 > git stash branch &lt;branchname&gt;<br>
 
-  - creates new branch from parent of original stash
+  - s new branch from parent of original stash
   - also useful if `git stash apply` fails due to too many changes in branch
 
 ### Undo/Redo
