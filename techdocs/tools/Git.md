@@ -46,6 +46,9 @@ git core.attributesfile:
 - list branches sorted by date
 > git for-each-ref --sort=committerdate refs/heads/ --format='%(committerdate:short) %(refname:short)'
 
+- create branch from any commit hash
+> git branch <new-branch-name> <SHA>
+
 ### Commits
 - show message for specified commit
 > git log --format=%B -n 1 &lt;hash&gt;
@@ -95,6 +98,9 @@ git core.attributesfile:
   - also useful if `git stash apply` fails due to too many changes in branch
 
 ### Undo/Redo
+- revert last commit
+> git reset --soft|--hard HEAD~1
+
 - discard changes since a specified commit
 > git reset --hard <commit>
 
